@@ -7,10 +7,11 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'GitAngularIssues';
+  title = 'Angular Github Repo Issues';
   response: any;
 
   constructor(private http: HttpClient) {
+    this.search();
   }
 
   ngOnInit() {
